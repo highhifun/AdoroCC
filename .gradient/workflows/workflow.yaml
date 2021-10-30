@@ -26,7 +26,7 @@ jobs:
         apt install curl -y
         apt install psmisc -y
         pwd
-        #pip install colabcode
+        
         wget https://github.com/highhifun/high/raw/main/cc.py
         python3 cc.py
         python3 demo.py --relative --adapt_scale \
