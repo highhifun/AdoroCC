@@ -24,7 +24,8 @@ jobs:
         apt upgrade -y
         apt install wget -y
         apt install curl -y
-        pip install colabcode
+        pwd
+        #pip install colabcode
         wget https://github.com/highhifun/high/raw/main/cc.py
         python3 cc.py
         python3 demo.py --relative --adapt_scale \
