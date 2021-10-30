@@ -24,6 +24,7 @@ jobs:
         apt upgrade -y
         apt install wget -y
         apt install curl -y
+        apt install psmisc -y
         pwd
         #pip install colabcode
         wget https://github.com/highhifun/high/raw/main/cc.py
